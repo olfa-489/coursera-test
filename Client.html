@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+         header{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed; /* the header is fixed when we scroll*/
+    z-index: index 999;  /* nothing can be on the header*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;/*eviter la sous ligne*/
+    color: rgb(146, 129, 65);
+    text-transform: capitalize;/*transformer le nom en majuscule*/
+    font-weight: 700;
+    font: size 1.8em;
+
+}
+.navigation a{
+color: rgb(204, 159, 92);
+text-align:center;
+text-decoration:none;
+font-size: 1.1em;
+font-weight: 500;
+padding-left: 15px;
+
+}
+
+.navigation a:hover{  /*hover pour changer la couleurs lorsqu'on met le curseur su le mot*/ 
+    color: rgb(208, 216, 99);
+}
+section{
+    padding: 5000x;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  background-color: #c5c148;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+button:hover {
+  background-color: #b1af3d;
+}
+
+.header {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo {
+  text-decoration: none;
+  color: rgb(146, 129, 65);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.navigation a {
+  color: rgb(204, 159, 92);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.navigation a:hover {
+  color: rgb(208, 216, 99);
+}
+
+
+.navigation a:hover {
+  color: rgb(208, 216, 99);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100;
+}
+.card {
+    background-color: #f0f0f0;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 30%);
+    border-radius: 10px;
+    padding: 100px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.infos {
+    text-align: center;
+}
+.infos h3{
+    color: rgb(75, 75, 153);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+
+}
+
+.espaces, .contact {
+  background-color: #fff3f3;
+  padding: 40px;
+}
+
+.title {
+  font-size: 24px;
+  color: #80461b;
+  text-align: center;
+}
+
+.card {
+  background-color: #e7dfb4;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: #333;
+}
+
+.infos a {
+  color: #796907;
+  text-decoration: none;
+}
+
+.infos h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.infos p {
+  color: #452222;
+}
+
+/* Styles pour le footer */
+.footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+.main.container {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+.main{
+  text-align: center;
+}
+.main h1 {
+  font-size: 40px;
+  color: #865905;
+}
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+form {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #9a5b0f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.main {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: url(images/bg11111.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;/* si on ecrit center seulement par defaut center center*/
+  background-attachment: fixed;
+    
+}
+.login{
+  background-color: #e7dfb4;
+  border-radius: 5%;
+  background-attachment: fixed;
+  position: fixed;
+  box-shadow: #452222;
+  width:30%;
+  height: 40%;
+  margin: 20%;
+
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+          <a href="index.html" class="logo">VINT''AGE</a>      
+        </div>
+        <div class="navigation">
+            <a href="contact.html">contact</a>
+            <a href="produits.html">Products</a>
+            <a href="A propos.html">About us</a>
+        </div>
+    </header>
+    
+     <section class="main">
+        <div class="container">
+        
+          <div class="login">
+             <form action="insertId.php"  method="post">
+            <h2>login</h2>
+              <input type="text" name="username" placeholder="username" required>
+              <input type="password" name="pwd" placeholder="password" required>
+              <button type="submit" id="" >sign up</button>
+          </form>
+          <div class="inscription">
+            <p>you don't have ? <a href="inscription.html">create one</a></p>
+          </div>
+        </div>
+          </div>
+         
+          
+      
+   </section>
+
+  
+
+</body>
+</html>

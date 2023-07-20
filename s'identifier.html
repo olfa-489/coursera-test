@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Connexion</title>
+    
+   <style>
+section{
+    padding: 3000x;
+}
+
+/* Styles pour le titre */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Styles pour le formulaire */
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input[type="varchar"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+   </style>
+  </head>
+
+
+  <body>
+
+  
+    <h1>Connexion</h1>
+    <form action="insertId.php" method="post">
+      <label for="username">username:</label>
+      <input type="varchar" id="username" name="username" required>
+      <label for="password">password :</label>
+      <input type="varchar" id="password" name="password" required>
+      <input type="submit" value="Connect">
+    </form>
+  
+  
+    
+  </body>
+</html>

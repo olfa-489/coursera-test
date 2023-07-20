@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+      
+.header {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo {
+  text-decoration: none;
+  color: rgb(146, 129, 65);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.navigation a {
+  color: rgb(204, 159, 92);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.navigation a:hover {
+  color: rgb(208, 216, 99);
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border: #997710;
+
+}
+
+input[type=submit] {
+  background-color: #878b1d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #b68f1c;
+}
+
+.container {
+  border-radius: 20px;
+  background-color: #9cb0a8;
+  padding: 80px;
+}
+ h3{
+  color: #878b1d;
+text-align: center;
+size: 100px;
+padding: 20px;
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <a href="index.html" class="logo">VINT''AGE</a> 
+     </div>
+    <div class="navigation">
+        <a href="contact.html">contact</a>
+        <a href="produits.html">Products</a>
+        <a href="A propos.html">about us</a>
+    </div>
+</header> 
+<h3>Contact us!</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Tunisia</option>
+      <option value="Italy">Italy</option>
+      <option value="Greece">Greece</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
